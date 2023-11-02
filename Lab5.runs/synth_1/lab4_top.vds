@@ -1,0 +1,1051 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Nov 02 16:00:17 2023
+# Process ID: 11524
+# Current directory: C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1
+# Command line: vivado.exe -log lab4_top.vds -mode batch -messageDb vivado.pb -notrace -source lab4_top.tcl
+# Log file: C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1/lab4_top.vds
+# Journal file: C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab4_top.tcl -notrace
+Command: synth_design -top lab4_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12384 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 307.914 ; gain = 101.805
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'lab4_top' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:54]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1/.Xil/Vivado-11524-pax-5/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'Inst_clock_gen' of component 'clk_wiz_0' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1/.Xil/Vivado-11524-pax-5/realtime/clk_wiz_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'debouncer' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:71' bound to instance 'debouncer1' of component 'debouncer' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:226]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:79]
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (1#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:79]
+INFO: [Synth 8-3491] module 'ff_sync' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:143' bound to instance 'sync1' of component 'ff_sync' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:234]
+INFO: [Synth 8-638] synthesizing module 'ff_sync' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:150]
+INFO: [Synth 8-256] done synthesizing module 'ff_sync' (2#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:150]
+INFO: [Synth 8-3491] module 'rising_edge_detector' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:175' bound to instance 'edge1' of component 'rising_edge_detector' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:241]
+INFO: [Synth 8-638] synthesizing module 'rising_edge_detector' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:185]
+INFO: [Synth 8-256] done synthesizing module 'rising_edge_detector' (3#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:185]
+INFO: [Synth 8-3491] module 'keyboard' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/keyboard.vhd:39' bound to instance 'keyboard_inst' of component 'keyboard' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:252]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/keyboard.vhd:52]
+INFO: [Synth 8-3491] module 'sync_keyboard' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/sync_keyboard.vhd:10' bound to instance 'sync_keyboard_inst' of component 'sync_keyboard' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/keyboard.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'sync_keyboard' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/sync_keyboard.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'sync_keyboard' (4#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/sync_keyboard.vhd:20]
+INFO: [Synth 8-3491] module 'falling_edge_detector' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:207' bound to instance 'falling_edge_detector_inst' of component 'falling_edge_detector' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/keyboard.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'falling_edge_detector' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'falling_edge_detector' (5#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:217]
+INFO: [Synth 8-3491] module 'convert_scancode' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/convert_scancode.vhd:16' bound to instance 'convert_scancode_inst' of component 'convert_scancode' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/keyboard.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'convert_scancode' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/convert_scancode.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'convert_scancode' (6#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/convert_scancode.vhd:27]
+INFO: [Synth 8-3491] module 'keyboard_ctrl' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/keyboard_ctrl.vhd:17' bound to instance 'keyboard_ctrl_inst' of component 'keyboard_ctrl' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/keyboard.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'keyboard_ctrl' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_ctrl' (7#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst1' of component 'convert_to_binary' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/keyboard.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'convert_to_binary' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'convert_to_binary' (8#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:24]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst2' of component 'convert_to_binary' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/keyboard.vhd:175]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst3' of component 'convert_to_binary' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/keyboard.vhd:181]
+INFO: [Synth 8-3491] module 'seven_seg_driver' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/7SegDriver.vhd:5' bound to instance 'seven_seg_inst' of component 'seven_seg_driver' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/keyboard.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'seven_seg_driver' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/7SegDriver.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg_driver' (9#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/7SegDriver.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (10#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/keyboard.vhd:52]
+INFO: [Synth 8-3491] module 'bcd2bin' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/bcd2bin.vhd:8' bound to instance 'bcd2bin_inst' of component 'bcd2bin' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:264]
+INFO: [Synth 8-638] synthesizing module 'bcd2bin' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/bcd2bin.vhd:15]
+	Parameter W bound to: 22 - type: integer 
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:110' bound to instance 'shift_reg_dff' of component 'dff' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/bcd2bin.vhd:26]
+INFO: [Synth 8-638] synthesizing module 'dff' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:120]
+	Parameter W bound to: 22 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dff' (11#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:120]
+	Parameter W bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:110' bound to instance 'cnt_reg_dff' of component 'dff' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/bcd2bin.vhd:35]
+INFO: [Synth 8-638] synthesizing module 'dff__parameterized1' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:120]
+	Parameter W bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dff__parameterized1' (11#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:120]
+	Parameter W bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:110' bound to instance 'bin_out_reg_inst' of component 'dff' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/bcd2bin.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'dff__parameterized3' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:120]
+	Parameter W bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dff__parameterized3' (11#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:120]
+INFO: [Synth 8-256] done synthesizing module 'bcd2bin' (12#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/bcd2bin.vhd:15]
+INFO: [Synth 8-3491] module 'ram_ctrl' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/ram_ctrl.vhd:36' bound to instance 'ram_ctrl_inst' of component 'ram_ctrl' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:272]
+INFO: [Synth 8-638] synthesizing module 'ram_ctrl' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/ram_ctrl.vhd:49]
+INFO: [Synth 8-3491] module 'ram_8kB' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1/.Xil/Vivado-11524-pax-5/realtime/ram_8kB_stub.vhdl:5' bound to instance 'ram_8kB_inst' of component 'ram_8kB' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/ram_ctrl.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'ram_8kB' [C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1/.Xil/Vivado-11524-pax-5/realtime/ram_8kB_stub.vhdl:17]
+INFO: [Synth 8-256] done synthesizing module 'ram_ctrl' (13#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/ram_ctrl.vhd:49]
+INFO: [Synth 8-3491] module 'ALU' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU.vhd:6' bound to instance 'ALU_inst' of component 'ALU' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:287]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU.vhd:16]
+INFO: [Synth 8-3491] module 'mod3' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/mod3.vhd:34' bound to instance 'mod3_calculator' of component 'mod3' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'mod3' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/mod3.vhd:40]
+WARNING: [Synth 8-3936] Found unconnected internal register 'result_reg' and it is trimmed from '8' to '2' bits. [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/mod3.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'mod3' (14#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/mod3.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (15#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU.vhd:16]
+INFO: [Synth 8-3491] module 'cordic' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/cordic.vhd:35' bound to instance 'inst_cordic' of component 'cordic' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:305]
+INFO: [Synth 8-638] synthesizing module 'cordic' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/cordic.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'cordic' (16#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/cordic.vhd:47]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'binary2BCD' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd:8' bound to instance 'binary2BCD_inst1' of component 'binary2BCD' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:319]
+INFO: [Synth 8-638] synthesizing module 'binary2BCD' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd:17]
+	Parameter WIDTH bound to: 8 - type: integer 
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:110' bound to instance 'shift_reg_dff' of component 'dff' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd:27]
+INFO: [Synth 8-638] synthesizing module 'dff__parameterized5' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:120]
+	Parameter W bound to: 18 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dff__parameterized5' (16#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:120]
+	Parameter W bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:110' bound to instance 'cnt_reg_dff' of component 'dff' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd:36]
+INFO: [Synth 8-638] synthesizing module 'dff__parameterized7' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:120]
+	Parameter W bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dff__parameterized7' (16#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:120]
+	Parameter W bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'dff' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:110' bound to instance 'BCD_out_reg_dff' of component 'dff' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'dff__parameterized9' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:120]
+	Parameter W bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'dff__parameterized9' (16#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd:120]
+WARNING: [Synth 8-3936] Found unconnected internal register 'shift_inc_reg' and it is trimmed from '18' to '17' bits. [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd:61]
+INFO: [Synth 8-256] done synthesizing module 'binary2BCD' (17#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd:17]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'binary2BCD' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd:8' bound to instance 'binary2BCD_inst2' of component 'binary2BCD' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:326]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'binary2BCD' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd:8' bound to instance 'binary2BCD_inst3' of component 'binary2BCD' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:333]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'binary2BCD' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd:8' bound to instance 'binary2BCD_inst4' of component 'binary2BCD' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:340]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'binary2BCD' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd:8' bound to instance 'binary2BCD_inst5' of component 'binary2BCD' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:347]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'binary2BCD' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd:8' bound to instance 'binary2BCD_inst6' of component 'binary2BCD' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:354]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'binary2BCD' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd:8' bound to instance 'binary2BCD_inst7' of component 'binary2BCD' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:361]
+INFO: [Synth 8-3491] module 'seven_seg_vga' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:39' bound to instance 'inst_7seg_vga' of component 'seven_seg_vga' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:368]
+INFO: [Synth 8-638] synthesizing module 'seven_seg_vga' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:55]
+INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/vga_controller_640_60.vhd:85' bound to instance 'vgactrl640_60' of component 'vga_controller_640_60' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/vga_controller_640_60.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (18#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/vga_controller_640_60.vhd:96]
+WARNING: [Synth 8-614] signal 'op' is read in the process but is not in the sensitivity list [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:108]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_1' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg_dig' (19#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:47]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_2' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:194]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_3' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:205]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_4' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:216]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_5' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:228]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_6' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:239]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_7' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:250]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_8' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:261]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_9' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:272]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_10' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:286]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_11' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:297]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_12' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:308]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_13' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:320]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_14' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:332]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_15' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:344]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_16' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:355]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_17' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:369]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_18' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:380]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_19' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:390]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_20' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:401]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_21' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:413]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_22' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:424]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg_vga' (20#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/7seg_vga.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'lab4_top' (21#1) [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:54]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 346.207 ; gain = 140.098
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 346.207 ; gain = 140.098
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'Inst_clock_gen' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/lab4_top.vhd:198]
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'ram_8kB' instantiated as 'ram_ctrl_inst/ram_8kB_inst' [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/ram_ctrl.vhd:97]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1/.Xil/Vivado-11524-pax-5/dcp/clk_wiz_0_in_context.xdc] for cell 'Inst_clock_gen'
+Finished Parsing XDC File [C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1/.Xil/Vivado-11524-pax-5/dcp/clk_wiz_0_in_context.xdc] for cell 'Inst_clock_gen'
+Parsing XDC File [C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1/.Xil/Vivado-11524-pax-5/dcp_2/ram_8kB_in_context.xdc] for cell 'ram_ctrl_inst/ram_8kB_inst'
+Finished Parsing XDC File [C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1/.Xil/Vivado-11524-pax-5/dcp_2/ram_8kB_in_context.xdc] for cell 'ram_ctrl_inst/ram_8kB_inst'
+Parsing XDC File [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc]
+Finished Parsing XDC File [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/lab4_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/lab4_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 663.516 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 663.516 ; gain = 457.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 663.516 ; gain = 457.406
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_100M. (constraint file  C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1/.Xil/Vivado-11524-pax-5/dcp/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_100M. (constraint file  C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1/.Xil/Vivado-11524-pax-5/dcp/clk_wiz_0_in_context.xdc, line 4).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 663.516 ; gain = 457.406
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "button_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "valid_scan_code" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "binary_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "anode_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/ram_ctrl.vhd:119]
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'ram_ctrl'
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU.vhd:38]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/cordic.vhd:86]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/cordic.vhd:86]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/new/cordic.vhd:86]
+INFO: [Synth 8-5546] ROM "X_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "AngleTable" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "SumAngle_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "segment" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sign_of" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "angle_decimal" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "angle_sign" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  s_init |                              000 |                              000
+                 s_write |                              001 |                              001
+              s_addr_inc |                              010 |                              010
+            s_start_read |                              011 |                              011
+                 s_readb |                              100 |                              100
+                s_readop |                              101 |                              101
+                 s_reada |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'ram_ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 663.516 ; gain = 457.406
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |seven_seg_vga__GB0 |           1|     30332|
+|2     |seven_seg_vga__GB1 |           1|      8686|
+|3     |seven_seg_vga__GB2 |           1|     10162|
+|4     |lab4_top__GC0      |           1|      5375|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     24 Bit       Adders := 2     
+	   2 Input     12 Bit       Adders := 7     
+	   2 Input     11 Bit       Adders := 486   
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 21    
+	   2 Input      8 Bit       Adders := 8     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 10    
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 4     
+	               22 Bit    Registers := 1     
+	               18 Bit    Registers := 7     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 8     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 10    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   7 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 7     
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input     22 Bit        Muxes := 9     
+	   2 Input     18 Bit        Muxes := 9     
+	  11 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 21    
+	   2 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 7     
+	   2 Input      9 Bit        Muxes := 2     
+	   5 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 14    
+	   3 Input      8 Bit        Muxes := 1     
+	  14 Input      7 Bit        Muxes := 1     
+	  16 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 11    
+	  16 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	  13 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 331   
+	   5 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 13    
+	   6 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module lab4_top 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+Module seven_seg_dig__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__8 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__9 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__10 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__11 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__12 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__13 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__14 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__15 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__17 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__18 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__19 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__20 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig__21 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module seven_seg_dig 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 22    
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 15    
+Module vga_controller_640_60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module seven_seg_vga 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      8 Bit        Muxes := 1     
+	  14 Input      7 Bit        Muxes := 1     
+	  17 Input      4 Bit        Muxes := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ff_sync 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module rising_edge_detector 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module sync_keyboard 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module falling_edge_detector 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module convert_scancode 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module keyboard_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   7 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module convert_to_binary__1 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      4 Bit        Muxes := 2     
+Module convert_to_binary__2 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      4 Bit        Muxes := 2     
+Module convert_to_binary 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      4 Bit        Muxes := 2     
+Module seven_seg_driver 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dff 
+Detailed RTL Component Info : 
++---Registers : 
+	               22 Bit    Registers := 1     
+Module dff__parameterized1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module dff__parameterized3 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module bcd2bin 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 7     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     22 Bit        Muxes := 9     
+	   2 Input     12 Bit        Muxes := 1     
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+Module ram_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	  13 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 7     
+Module mod3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 7     
+	   2 Input      2 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 7     
+	   2 Input      2 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 2     
+	   5 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module cordic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     24 Bit       Adders := 1     
+	   3 Input     24 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 3     
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   3 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 6     
+	   2 Input     18 Bit        Muxes := 1     
+	  11 Input     18 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 2     
+Module dff__parameterized5__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+Module dff__parameterized7__1 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module dff__parameterized9__1 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module binary2BCD__1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module dff__parameterized5__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+Module dff__parameterized7__2 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module dff__parameterized9__2 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module binary2BCD__2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module dff__parameterized5__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+Module dff__parameterized7__3 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module dff__parameterized9__3 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module binary2BCD__3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module dff__parameterized5__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+Module dff__parameterized7__4 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module dff__parameterized9__4 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module binary2BCD__4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module dff__parameterized5__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+Module dff__parameterized7__5 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module dff__parameterized9__5 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module binary2BCD__5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module dff__parameterized5__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+Module dff__parameterized7__6 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module dff__parameterized9__6 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module binary2BCD__6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module dff__parameterized5 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 1     
+Module dff__parameterized7 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+Module dff__parameterized9 
+Detailed RTL Component Info : 
++---Registers : 
+	               10 Bit    Registers := 1     
+Module binary2BCD 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 3     
+	   2 Input      4 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 3     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 663.516 ; gain = 457.406
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "convert_to_binary_inst1/binary_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "convert_to_binary_inst2/binary_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "convert_to_binary_inst3/binary_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "seven_seg_inst/anode_next" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP H_reg_reg, operation Mode is: (A*(B:0x9b7))'.
+DSP Report: register H_reg_reg is absorbed into DSP H_reg_reg.
+DSP Report: operator H_reg0 is absorbed into DSP H_reg_reg.
+INFO: [Synth 8-5546] ROM "debouncer1/button_out" won't be mapped to RAM because it is too sparse
+DSP Report: Generating DSP multOp, operation Mode is: (A:0x64000)*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+DSP Report: Generating DSP multOp, operation Mode is: (A:0x64000)*B.
+DSP Report: operator multOp is absorbed into DSP multOp.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 663.516 ; gain = 457.406
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 663.516 ; gain = 457.406
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |seven_seg_vga__GB0 |           1|      2574|
+|2     |seven_seg_vga__GB1 |           1|      1030|
+|3     |seven_seg_vga__GB2 |           1|     10066|
+|4     |lab4_top__GC0      |           1|      6668|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping    | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cordic      | (A*(B:0x9b7))' | 24     | 13     | -      | -      | 37     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|lab4_top    | (A:0x64000)*B  | 19     | 12     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|lab4_top    | (A:0x64000)*B  | 19     | 12     | -      | -      | 31     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (blank_reg) is unused and will be removed from module vga_controller_640_60.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 663.516 ; gain = 457.406
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 663.516 ; gain = 457.406
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |seven_seg_vga__GB0 |           1|       418|
+|2     |seven_seg_vga__GB1 |           1|       260|
+|3     |seven_seg_vga__GB2 |           1|       872|
+|4     |lab4_top__GC0      |           1|      3490|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Inst_clock_gen/clk_out1' to pin 'Inst_clock_gen/bbstub_clk_out1/O'
+INFO: [Synth 8-5820] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:36 . Memory (MB): peak = 707.574 ; gain = 501.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 797.020 ; gain = 590.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------+------------+----------+
+|      |RTL Partition      |Replication |Instances |
++------+-------------------+------------+----------+
+|1     |seven_seg_vga__GB0 |           1|       418|
+|2     |seven_seg_vga__GB1 |           1|       260|
+|3     |seven_seg_vga__GB2 |           1|       872|
+|4     |lab4_top__GC0      |           1|      3512|
++------+-------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 797.020 ; gain = 590.910
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 797.020 ; gain = 590.910
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 797.020 ; gain = 590.910
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 797.020 ; gain = 590.910
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 797.020 ; gain = 590.910
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 797.020 ; gain = 590.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 797.020 ; gain = 590.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 797.020 ; gain = 590.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 797.020 ; gain = 590.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |ram_8kB       |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |clk_wiz_0_bbox |     1|
+|2     |ram_8kB_bbox   |     1|
+|3     |CARRY4         |   203|
+|4     |DSP48E1        |     1|
+|5     |DSP48E1_1      |     1|
+|6     |DSP48E1_2      |     1|
+|7     |LUT1           |   221|
+|8     |LUT2           |   637|
+|9     |LUT3           |   152|
+|10    |LUT4           |   168|
+|11    |LUT5           |   302|
+|12    |LUT6           |   597|
+|13    |MUXF7          |     3|
+|14    |XORCY          |     3|
+|15    |FDCE           |    33|
+|16    |FDPE           |     9|
+|17    |FDRE           |   442|
+|18    |FDSE           |     5|
+|19    |IBUF           |     4|
+|20    |OBUF           |    25|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-------------------------------+-----------------------+------+
+|      |Instance                       |Module                 |Cells |
++------+-------------------------------+-----------------------+------+
+|1     |top                            |                       |  2817|
+|2     |  ALU_inst                     |ALU                    |    28|
+|3     |  bcd2bin_inst                 |bcd2bin                |   193|
+|4     |    bin_out_reg_inst           |dff__parameterized3    |     8|
+|5     |    cnt_reg_dff                |dff__parameterized1    |    29|
+|6     |    shift_reg_dff              |dff                    |   153|
+|7     |  binary2BCD_inst1             |binary2BCD             |    52|
+|8     |    BCD_out_reg_dff            |dff__parameterized9_21 |    12|
+|9     |    cnt_reg_dff                |dff__parameterized7_22 |    11|
+|10    |    shift_reg_dff              |dff__parameterized5_23 |    29|
+|11    |  binary2BCD_inst2             |binary2BCD_0           |    59|
+|12    |    BCD_out_reg_dff            |dff__parameterized9_18 |    12|
+|13    |    cnt_reg_dff                |dff__parameterized7_19 |    18|
+|14    |    shift_reg_dff              |dff__parameterized5_20 |    29|
+|15    |  binary2BCD_inst3             |binary2BCD_1           |    59|
+|16    |    BCD_out_reg_dff            |dff__parameterized9_15 |    12|
+|17    |    cnt_reg_dff                |dff__parameterized7_16 |    18|
+|18    |    shift_reg_dff              |dff__parameterized5_17 |    29|
+|19    |  binary2BCD_inst4             |binary2BCD_2           |    57|
+|20    |    BCD_out_reg_dff            |dff__parameterized9_12 |    10|
+|21    |    cnt_reg_dff                |dff__parameterized7_13 |    18|
+|22    |    shift_reg_dff              |dff__parameterized5_14 |    29|
+|23    |  binary2BCD_inst5             |binary2BCD_3           |    52|
+|24    |    BCD_out_reg_dff            |dff__parameterized9_9  |    10|
+|25    |    cnt_reg_dff                |dff__parameterized7_10 |    18|
+|26    |    shift_reg_dff              |dff__parameterized5_11 |    24|
+|27    |  binary2BCD_inst6             |binary2BCD_4           |    59|
+|28    |    BCD_out_reg_dff            |dff__parameterized9_6  |    11|
+|29    |    cnt_reg_dff                |dff__parameterized7_7  |    19|
+|30    |    shift_reg_dff              |dff__parameterized5_8  |    29|
+|31    |  binary2BCD_inst7             |binary2BCD_5           |    53|
+|32    |    BCD_out_reg_dff            |dff__parameterized9    |    10|
+|33    |    cnt_reg_dff                |dff__parameterized7    |    19|
+|34    |    shift_reg_dff              |dff__parameterized5    |    24|
+|35    |  debouncer1                   |debouncer              |    54|
+|36    |  edge1                        |rising_edge_detector   |     1|
+|37    |  inst_7seg_vga                |seven_seg_vga          |  1156|
+|38    |    vgactrl640_60              |vga_controller_640_60  |  1002|
+|39    |  inst_cordic                  |cordic                 |   534|
+|40    |  keyboard_inst                |keyboard               |   204|
+|41    |    convert_scancode_inst      |convert_scancode       |    67|
+|42    |    falling_edge_detector_inst |falling_edge_detector  |     2|
+|43    |    keyboard_ctrl_inst         |keyboard_ctrl          |    86|
+|44    |    seven_seg_inst             |seven_seg_driver       |    45|
+|45    |    sync_keyboard_inst         |sync_keyboard          |     4|
+|46    |  ram_ctrl_inst                |ram_ctrl               |   220|
+|47    |  sync1                        |ff_sync                |     2|
++------+-------------------------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:41 . Memory (MB): peak = 797.020 ; gain = 590.910
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 797.020 ; gain = 239.945
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 797.020 ; gain = 590.910
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 213 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+150 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 797.020 ; gain = 563.914
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 797.020 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov 02 16:01:00 2023...

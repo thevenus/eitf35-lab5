@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Nov 02 16:00:17 2023
+# Process ID: 11524
+# Current directory: C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1
+# Command line: vivado.exe -log lab4_top.vds -mode batch -messageDb vivado.pb -notrace -source lab4_top.tcl
+# Log file: C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1/lab4_top.vds
+# Journal file: C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab4_top.tcl -notrace

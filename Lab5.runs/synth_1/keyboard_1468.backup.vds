@@ -1,0 +1,109 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Wed Oct 18 10:54:24 2023
+# Process ID: 1468
+# Current directory: C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1
+# Command line: vivado.exe -log keyboard.vds -mode batch -messageDb vivado.pb -notrace -source keyboard.tcl
+# Log file: C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1/keyboard.vds
+# Journal file: C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source keyboard.tcl -notrace
+Command: synth_design -top keyboard -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8892 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 307.488 ; gain = 100.543
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'keyboard' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:51]
+INFO: [Synth 8-3491] module 'sync_keyboard' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/sync_keyboard.vhd:10' bound to instance 'sync_keyboard_inst' of component 'sync_keyboard' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'sync_keyboard' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/sync_keyboard.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'sync_keyboard' (1#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/sync_keyboard.vhd:20]
+INFO: [Synth 8-3491] module 'falling_edge_detector' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/ALU_components.vhd:207' bound to instance 'falling_edge_detector_inst' of component 'falling_edge_detector' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'falling_edge_detector' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/ALU_components.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'falling_edge_detector' (2#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/ALU_components.vhd:217]
+INFO: [Synth 8-3491] module 'convert_scancode' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_scancode.vhd:16' bound to instance 'convert_scancode_inst' of component 'convert_scancode' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:146]
+INFO: [Synth 8-638] synthesizing module 'convert_scancode' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_scancode.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'convert_scancode' (3#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_scancode.vhd:27]
+WARNING: [Synth 8-5640] Port 'enter_pressed' is missing in component declaration [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:82]
+INFO: [Synth 8-3491] module 'keyboard_ctrl' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/keyboard_ctrl.vhd:17' bound to instance 'keyboard_ctrl_inst' of component 'keyboard_ctrl' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'keyboard_ctrl' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_ctrl' (4#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst1' of component 'convert_to_binary' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'convert_to_binary' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'convert_to_binary' (5#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:24]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst2' of component 'convert_to_binary' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:172]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst3' of component 'convert_to_binary' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:178]
+INFO: [Synth 8-3491] module 'seven_seg_driver' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/7SegDriver.vhd:5' bound to instance 'seven_seg_inst' of component 'seven_seg_driver' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'seven_seg_driver' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/7SegDriver.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg_driver' (6#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/7SegDriver.vhd:14]
+WARNING: [Synth 8-3848] Net BCD_num in module/entity keyboard does not have driver. [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (7#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:51]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[23]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[22]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[21]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[20]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[19]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[18]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[17]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[16]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[15]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[14]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[13]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[12]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[11]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[10]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[9]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[8]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[7]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[6]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[5]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[4]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[3]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[2]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[1]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 344.703 ; gain = 137.758
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 344.703 ; gain = 137.758
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'btnc'. [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc:194]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc:194]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnc'. [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc:195]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc:195]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnl'. [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc:200]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc:200]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnl'. [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc:201]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc:201]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/keyboard_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/keyboard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 645.680 ; gain = 0.000

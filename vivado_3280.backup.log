@@ -1,0 +1,436 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Nov 02 15:21:07 2023
+# Process ID: 3280
+# Current directory: C:/Users/fu6315ma-s/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1120 C:\Users\fu6315ma-s\Lab5\Lab5.xpr
+# Log file: C:/Users/fu6315ma-s/Lab5/vivado.log
+# Journal file: C:/Users/fu6315ma-s/Lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fu6315ma-s/Lab5/Lab5.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 839.773 ; gain = 201.332
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_binary2BCD' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/welcome_480x120.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/welcome_480x120.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/welcome_480x120.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_binary2BCD_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_cdc_single
+INFO: [VRFC 10-311] analyzing module xpm_cdc_gray
+INFO: [VRFC 10-311] analyzing module xpm_cdc_handshake
+INFO: [VRFC 10-311] analyzing module xpm_cdc_pulse
+INFO: [VRFC 10-311] analyzing module xpm_cdc_array_single
+INFO: [VRFC 10-311] analyzing module xpm_cdc_sync_rst
+INFO: [VRFC 10-311] analyzing module xpm_cdc_async_rst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_base
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dpdistram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sdpram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_spram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_tdpram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_binary2BCD_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_VCOMP.vhd" into library xpm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity debouncer
+INFO: [VRFC 10-307] analyzing entity dff
+INFO: [VRFC 10-307] analyzing entity ff_sync
+INFO: [VRFC 10-307] analyzing entity rising_edge_detector
+INFO: [VRFC 10-307] analyzing entity falling_edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary2BCD
+INFO: [VRFC 10-163] Analyzing VHDL file "//stu.net.lth.se/fu6315ma-s/Documents/Lab3/Lab3.srcs/sim_2/new/tb_binary2BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_binary2BCD
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 53bb00c7881d4b74b8e9b83253bd5b1c --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_binary2BCD_behav xil_defaultlib.tb_binary2BCD xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.alu_components_pack
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=18)\]
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=10)\]
+Compiling architecture structural of entity xil_defaultlib.binary2BCD [binary2bcd_default]
+Compiling architecture structural of entity xil_defaultlib.tb_binary2bcd
+Built simulation snapshot tb_binary2BCD_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_binary2BCD_behav -key {Behavioral:sim_1:Functional:tb_binary2BCD} -tclbatch {tb_binary2BCD.tcl} -view {C:/Users/fu6315ma-s/eitf35-lab4/tb_bcd2bin_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/fu6315ma-s/eitf35-lab4/tb_bcd2bin_behav.wcfg
+WARNING: Simulation object /tb_bcd2bin/clk was not found in the design.
+WARNING: Simulation object /tb_bcd2bin/reset was not found in the design.
+WARNING: Simulation object /tb_bcd2bin/binary_out was not found in the design.
+WARNING: Simulation object /tb_bcd2bin/BCD_in was not found in the design.
+WARNING: Simulation object /tb_bcd2bin/PERIOD was not found in the design.
+source tb_binary2BCD.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_binary2BCD_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10us
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 841.352 ; gain = 1.578
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_binary2BCD' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/welcome_480x120.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/welcome_480x120.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/welcome_480x120.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_binary2BCD_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_cdc_single
+INFO: [VRFC 10-311] analyzing module xpm_cdc_gray
+INFO: [VRFC 10-311] analyzing module xpm_cdc_handshake
+INFO: [VRFC 10-311] analyzing module xpm_cdc_pulse
+INFO: [VRFC 10-311] analyzing module xpm_cdc_array_single
+INFO: [VRFC 10-311] analyzing module xpm_cdc_sync_rst
+INFO: [VRFC 10-311] analyzing module xpm_cdc_async_rst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_base
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dpdistram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sdpram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_spram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_tdpram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_binary2BCD_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_VCOMP.vhd" into library xpm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity debouncer
+INFO: [VRFC 10-307] analyzing entity dff
+INFO: [VRFC 10-307] analyzing entity ff_sync
+INFO: [VRFC 10-307] analyzing entity rising_edge_detector
+INFO: [VRFC 10-307] analyzing entity falling_edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary2BCD
+INFO: [VRFC 10-163] Analyzing VHDL file "//stu.net.lth.se/fu6315ma-s/Documents/Lab3/Lab3.srcs/sim_2/new/tb_binary2BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_binary2BCD
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 53bb00c7881d4b74b8e9b83253bd5b1c --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_binary2BCD_behav xil_defaultlib.tb_binary2BCD xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.alu_components_pack
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=18)\]
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=10)\]
+Compiling architecture structural of entity xil_defaultlib.binary2BCD [binary2bcd_default]
+Compiling architecture structural of entity xil_defaultlib.tb_binary2bcd
+Built simulation snapshot tb_binary2BCD_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 842.313 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 10 us
+relaunch_sim
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_binary2BCD' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/welcome_480x120.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/welcome_480x120.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/welcome_480x120.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_binary2BCD_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_cdc_single
+INFO: [VRFC 10-311] analyzing module xpm_cdc_gray
+INFO: [VRFC 10-311] analyzing module xpm_cdc_handshake
+INFO: [VRFC 10-311] analyzing module xpm_cdc_pulse
+INFO: [VRFC 10-311] analyzing module xpm_cdc_array_single
+INFO: [VRFC 10-311] analyzing module xpm_cdc_sync_rst
+INFO: [VRFC 10-311] analyzing module xpm_cdc_async_rst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_base
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dpdistram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sdpram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_spram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_tdpram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_binary2BCD_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_VCOMP.vhd" into library xpm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity debouncer
+INFO: [VRFC 10-307] analyzing entity dff
+INFO: [VRFC 10-307] analyzing entity ff_sync
+INFO: [VRFC 10-307] analyzing entity rising_edge_detector
+INFO: [VRFC 10-307] analyzing entity falling_edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary2BCD
+INFO: [VRFC 10-163] Analyzing VHDL file "//stu.net.lth.se/fu6315ma-s/Documents/Lab3/Lab3.srcs/sim_2/new/tb_binary2BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_binary2BCD
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 53bb00c7881d4b74b8e9b83253bd5b1c --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_binary2BCD_behav xil_defaultlib.tb_binary2BCD xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.alu_components_pack
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=18)\]
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=10)\]
+Compiling architecture structural of entity xil_defaultlib.binary2BCD [binary2bcd_default]
+Compiling architecture structural of entity xil_defaultlib.tb_binary2bcd
+Built simulation snapshot tb_binary2BCD_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 862.863 ; gain = 0.000
+save_wave_config {C:/Users/fu6315ma-s/eitf35-lab4/tb_bcd2bin_behav.wcfg}
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_binary2BCD' in fileset 'sim_1'...
+INFO: [USF-XSim-25] Exported 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/welcome_480x120.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/welcome_480x120.coe'
+INFO: [USF-XSim-25] Exported 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/welcome_480x120.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav'
+"xvlog -m64 --relax -prj tb_binary2BCD_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_cdc_single
+INFO: [VRFC 10-311] analyzing module xpm_cdc_gray
+INFO: [VRFC 10-311] analyzing module xpm_cdc_handshake
+INFO: [VRFC 10-311] analyzing module xpm_cdc_pulse
+INFO: [VRFC 10-311] analyzing module xpm_cdc_array_single
+INFO: [VRFC 10-311] analyzing module xpm_cdc_sync_rst
+INFO: [VRFC 10-311] analyzing module xpm_cdc_async_rst
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_base.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_base
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dpdistram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dpdistram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_dprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_dprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sdpram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_spram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_spram
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_sprom.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_sprom
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_memory/hdl/xpm_memory_tdpram.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xpm_memory_tdpram
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl -m64 --relax -prj tb_binary2BCD_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Xilinx/Vivado/2016.1/data/ip/xpm/xpm_VCOMP.vhd" into library xpm
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/ALU_components.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity debouncer
+INFO: [VRFC 10-307] analyzing entity dff
+INFO: [VRFC 10-307] analyzing entity ff_sync
+INFO: [VRFC 10-307] analyzing entity rising_edge_detector
+INFO: [VRFC 10-307] analyzing entity falling_edge_detector
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/imports/Lab4/binary2BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity binary2BCD
+INFO: [VRFC 10-163] Analyzing VHDL file "//stu.net.lth.se/fu6315ma-s/Documents/Lab3/Lab3.srcs/sim_2/new/tb_binary2BCD.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_binary2BCD
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 53bb00c7881d4b74b8e9b83253bd5b1c --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_binary2BCD_behav xil_defaultlib.tb_binary2BCD xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.alu_components_pack
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=18)\]
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=10)\]
+Compiling architecture structural of entity xil_defaultlib.binary2BCD [binary2bcd_default]
+Compiling architecture structural of entity xil_defaultlib.tb_binary2bcd
+Built simulation snapshot tb_binary2BCD_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fu6315ma-s/Lab5/Lab5.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_binary2BCD_behav -key {Behavioral:sim_1:Functional:tb_binary2BCD} -tclbatch {tb_binary2BCD.tcl} -view {C:/Users/fu6315ma-s/eitf35-lab4/tb_bcd2bin_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config C:/Users/fu6315ma-s/eitf35-lab4/tb_bcd2bin_behav.wcfg
+source tb_binary2BCD.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 10us
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_binary2BCD_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 10us
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 862.863 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 02 15:53:24 2023] Launched synth_1...
+Run output will be captured here: C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1/runme.log
+[Thu Nov 02 15:53:24 2023] Launched impl_1...
+Run output will be captured here: C:/Users/fu6315ma-s/Lab5/Lab5.runs/impl_1/runme.log
+open_hw
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream
+[Thu Nov 02 16:00:15 2023] Launched synth_1...
+Run output will be captured here: C:/Users/fu6315ma-s/Lab5/Lab5.runs/synth_1/runme.log
+[Thu Nov 02 16:00:15 2023] Launched impl_1...
+Run output will be captured here: C:/Users/fu6315ma-s/Lab5/Lab5.runs/impl_1/runme.log
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.1
+  **** Build date : Apr  8 2016-16:12:32
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210274592413A
+set_property PROGRAM.FILE {C:/Users/fu6315ma-s/Lab5/Lab5.runs/impl_1/lab4_top.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {C:/Users/fu6315ma-s/Lab5/Lab5.runs/impl_1/lab4_top.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_hw
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 214 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/fu6315ma-s/Lab5/.Xil/Vivado-3280-pax-5/dcp/lab4_top_early.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/fu6315ma-s/Lab5/Lab5.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1582.703 ; gain = 408.461
+Finished Parsing XDC File [C:/Users/fu6315ma-s/Lab5/.Xil/Vivado-3280-pax-5/dcp/lab4_top_early.xdc]
+Parsing XDC File [C:/Users/fu6315ma-s/Lab5/.Xil/Vivado-3280-pax-5/dcp/lab4_top.xdc]
+Finished Parsing XDC File [C:/Users/fu6315ma-s/Lab5/.Xil/Vivado-3280-pax-5/dcp/lab4_top.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.188 . Memory (MB): peak = 1585.199 ; gain = 2.465
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.188 . Memory (MB): peak = 1585.199 ; gain = 2.465
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1721.320 ; gain = 767.883

@@ -1,0 +1,35 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Nov 02 08:51:50 2023
+# Process ID: 6296
+# Current directory: C:/Users/fu6315ma-s/Lab5
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8452 C:\Users\fu6315ma-s\Lab5\Lab5.xpr
+# Log file: C:/Users/fu6315ma-s/Lab5/vivado.log
+# Journal file: C:/Users/fu6315ma-s/Lab5\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fu6315ma-s/Lab5/Lab5.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/fu6315ma-s/eitf35-lab4/tb_bcd2bin_behav.wcfg
+source tb_bcd2bin.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse //stu.net.lth.se/fu6315ma-s/Documents/Lab3/Lab3.srcs/sim_2/new/tb_binary2BCD.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tb_binary2BCD [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+relaunch_sim

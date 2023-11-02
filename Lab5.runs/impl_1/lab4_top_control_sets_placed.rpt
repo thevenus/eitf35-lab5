@@ -1,0 +1,74 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
+| Date         : Thu Nov 02 16:01:33 2023
+| Host         : pax-5 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab4_top_control_sets_placed.rpt
+| Design       : lab4_top
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    21 |
+| Unused register locations in slices containing registers |    61 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |            6 |
+| No           | No                    | Yes                    |               4 |            3 |
+| No           | Yes                   | No                     |             243 |           74 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |              38 |           13 |
+| Yes          | Yes                   | No                     |             194 |           66 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+--------------------------------------------------+--------------------------------------------------+------------------+----------------+
+|          Clock Signal         |                   Enable Signal                  |                 Set/Reset Signal                 | Slice Load Count | Bel Load Count |
++-------------------------------+--------------------------------------------------+--------------------------------------------------+------------------+----------------+
+|  Inst_clock_gen/inst/clk_out1 | keyboard_inst/seven_seg_inst/anode_next          | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                1 |              4 |
+|  Inst_clock_gen/inst/clk_out1 | binary2BCD_inst5/cnt_reg_dff/q_reg[7]            | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                4 |              8 |
+|  Inst_clock_gen/inst/clk_out1 | binary2BCD_inst7/cnt_reg_dff/q_reg[7]            | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                2 |              8 |
+|  Inst_clock_gen/inst/clk_out1 | inst_cordic/E[0]                                 | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                3 |              8 |
+|  Inst_clock_gen/inst/clk_out1 | ram_ctrl_inst/A_next                             | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                2 |              8 |
+|  Inst_clock_gen/inst/clk_out1 | ram_ctrl_inst/B_next                             | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                4 |              8 |
+|  Inst_clock_gen/inst/clk_out1 | ram_ctrl_inst/OP_next                            | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                2 |              8 |
+|  Inst_clock_gen/inst/clk_out1 | binary2BCD_inst1/cnt_reg_dff/q_reg[0]_0          | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                4 |             10 |
+|  Inst_clock_gen/inst/clk_out1 | binary2BCD_inst2/cnt_reg_dff/q_reg[9]            | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                3 |             10 |
+|  Inst_clock_gen/inst/clk_out1 | binary2BCD_inst3/cnt_reg_dff/q_reg[9]            | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                2 |             10 |
+|  Inst_clock_gen/inst/clk_out1 | binary2BCD_inst4/cnt_reg_dff/q_reg[9]            | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                3 |             10 |
+|  Inst_clock_gen/inst/clk_out1 | binary2BCD_inst6/cnt_reg_dff/q_reg[9]            | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                4 |             10 |
+|  Inst_clock_gen/inst/clk_out1 |                                                  | inst_7seg_vga/vgactrl640_60/hcounter[10]_i_1_n_0 |                6 |             11 |
+|  Inst_clock_gen/inst/clk_out1 | inst_7seg_vga/vgactrl640_60/vcounter[10]_i_2_n_0 | inst_7seg_vga/vgactrl640_60/vcounter[10]_i_1_n_0 |                4 |             11 |
+|  Inst_clock_gen/inst/clk_out1 |                                                  |                                                  |                6 |             12 |
+|  Inst_clock_gen/inst/clk_out1 | ram_ctrl_inst/addr_next                          | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                4 |             13 |
+|  Inst_clock_gen/inst/clk_out1 | keyboard_inst/falling_edge_detector_inst/E[0]    | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                5 |             14 |
+|  Inst_clock_gen/inst/clk_out1 | inst_cordic/X_reg[23]_i_2_n_0                    | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                3 |             16 |
+|  Inst_clock_gen/inst/clk_out1 | keyboard_inst/keyboard_ctrl_inst/Q[1]            | keyboard_inst/keyboard_ctrl_inst/AR[0]           |                8 |             24 |
+|  Inst_clock_gen/inst/clk_out1 | inst_cordic/X_reg[23]_i_2_n_0                    | inst_cordic/X_reg[23]_i_1_n_0                    |               21 |             52 |
+|  Inst_clock_gen/inst/clk_out1 |                                                  | keyboard_inst/keyboard_ctrl_inst/AR[0]           |               71 |            236 |
++-------------------------------+--------------------------------------------------+--------------------------------------------------+------------------+----------------+
+
+

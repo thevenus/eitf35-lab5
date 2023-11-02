@@ -1,0 +1,348 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Mon Oct 16 16:55:47 2023
+# Process ID: 6128
+# Current directory: C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1
+# Command line: vivado.exe -log vga_ref.vds -mode batch -messageDb vivado.pb -notrace -source vga_ref.tcl
+# Log file: C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1/vga_ref.vds
+# Journal file: C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source vga_ref.tcl -notrace
+Command: synth_design -top vga_ref -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13952 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 307.824 ; gain = 101.766
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'vga_ref' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/vga_ref.vhd:16]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1/.Xil/Vivado-6128-pax-9/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'Inst_clock_gen' of component 'clk_wiz_0' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/vga_ref.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1/.Xil/Vivado-6128-pax-9/realtime/clk_wiz_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'seven_seg_vga' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:39' bound to instance 'inst_7seg_vga' of component 'seven_seg_vga' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/vga_ref.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'seven_seg_vga' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:54]
+INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/vga_controller_640_60.vhd:85' bound to instance 'vgactrl640_60' of component 'vga_controller_640_60' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/vga_controller_640_60.vhd:96]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (1#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/vga_controller_640_60.vhd:96]
+WARNING: [Synth 8-614] signal 'A' is read in the process but is not in the sensitivity list [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:102]
+WARNING: [Synth 8-614] signal 'B' is read in the process but is not in the sensitivity list [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:102]
+WARNING: [Synth 8-614] signal 'ans' is read in the process but is not in the sensitivity list [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:102]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_1' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:47]
+WARNING: [Synth 8-614] signal 'vpos' is read in the process but is not in the sensitivity list [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:55]
+WARNING: [Synth 8-614] signal 'hpos' is read in the process but is not in the sensitivity list [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:55]
+WARNING: [Synth 8-614] signal 'segment' is read in the process but is not in the sensitivity list [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg_dig' (2#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:47]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_2' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:173]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_3' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:184]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_4' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:195]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_5' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:206]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_6' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:217]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_7' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:228]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_8' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:239]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_9' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:250]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_10' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:261]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_11' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:272]
+INFO: [Synth 8-3491] module 'seven_seg_dig' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/seven_seg_dig.vhd:37' bound to instance 'digit_12' of component 'seven_seg_dig' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:283]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg_vga' (3#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/7seg_vga.vhd:54]
+INFO: [Synth 8-256] done synthesizing module 'vga_ref' (4#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/vga_ref.vhd:16]
+WARNING: [Synth 8-3331] design seven_seg_vga has unconnected port sign
+WARNING: [Synth 8-3331] design seven_seg_vga has unconnected port overflow
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 345.047 ; gain = 138.988
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 345.047 ; gain = 138.988
+---------------------------------------------------------------------------------
+WARNING: [Project 1-486] Could not resolve non-primitive black box cell 'clk_wiz_0' instantiated as 'Inst_clock_gen' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/vga_ref.vhd:66]
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1/.Xil/Vivado-6128-pax-9/dcp/clk_wiz_0_in_context.xdc] for cell 'Inst_clock_gen'
+Finished Parsing XDC File [C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1/.Xil/Vivado-6128-pax-9/dcp/clk_wiz_0_in_context.xdc] for cell 'Inst_clock_gen'
+Parsing XDC File [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/new/vga_constraints.xdc]
+Finished Parsing XDC File [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/new/vga_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/new/vga_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/vga_ref_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/vga_ref_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 653.645 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1/.Xil/Vivado-6128-pax-9/dcp/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1/.Xil/Vivado-6128-pax-9/dcp/clk_wiz_0_in_context.xdc, line 4).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "segment" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 254   
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  14 Input      7 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 180   
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_controller_640_60 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module seven_seg_dig 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 21    
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 15    
+Module seven_seg_vga 
+Detailed RTL Component Info : 
++---Muxes : 
+	  14 Input      7 Bit        Muxes := 1     
+	  10 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design seven_seg_vga has unconnected port sign
+WARNING: [Synth 8-3331] design seven_seg_vga has unconnected port overflow
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 653.645 ; gain = 447.586
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (blank_reg) is unused and will be removed from module vga_controller_640_60.
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 653.645 ; gain = 447.586
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'Inst_clock_gen/clk_out1' to pin 'Inst_clock_gen/bbstub_clk_out1/O'
+WARNING: [Synth 8-565] redefining clock 'clk'
+INFO: [Synth 8-5820] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 653.645 ; gain = 447.586
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |clk_wiz_0_bbox |     1|
+|2     |CARRY4         |   384|
+|3     |LUT1           |   285|
+|4     |LUT2           |  1450|
+|5     |LUT3           |     6|
+|6     |LUT4           |    19|
+|7     |LUT5           |    23|
+|8     |LUT6           |    74|
+|9     |FDRE           |    24|
+|10    |IBUF           |     1|
+|11    |OBUF           |    14|
++------+---------------+------+
+
+Report Instance Areas: 
++------+------------------+----------------------+------+
+|      |Instance          |Module                |Cells |
++------+------------------+----------------------+------+
+|1     |top               |                      |  2282|
+|2     |  inst_7seg_vga   |seven_seg_vga         |  2265|
+|3     |    vgactrl640_60 |vga_controller_640_60 |  2243|
++------+------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 653.645 ; gain = 447.586
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 653.645 ; gain = 107.332
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 653.645 ; gain = 447.586
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 385 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'vga_ref' is not ideal for floorplanning, since the cellview 'vga_controller_640_60' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 14 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 653.645 ; gain = 420.551
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 653.645 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 16 16:56:13 2023...

@@ -1,0 +1,20 @@
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 53bb00c7881d4b74b8e9b83253bd5b1c --debug typical --relax --mt 2 -L xil_defaultlib -L xpm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_binary2BCD_behav xil_defaultlib.tb_binary2BCD xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.alu_components_pack
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=18)\]
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=4)\]
+Compiling architecture behavioral of entity xil_defaultlib.dff [\dff(w=10)\]
+Compiling architecture structural of entity xil_defaultlib.binary2BCD [binary2bcd_default]
+Compiling architecture structural of entity xil_defaultlib.tb_binary2bcd
+Built simulation snapshot tb_binary2BCD_behav

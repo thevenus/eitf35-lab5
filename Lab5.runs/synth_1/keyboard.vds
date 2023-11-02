@@ -1,0 +1,394 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Thu Oct 19 09:45:42 2023
+# Process ID: 11232
+# Current directory: C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1
+# Command line: vivado.exe -log keyboard.vds -mode batch -messageDb vivado.pb -notrace -source keyboard.tcl
+# Log file: C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1/keyboard.vds
+# Journal file: C:/Users/fu6315ma-s/Lab4/Lab4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source keyboard.tcl -notrace
+Command: synth_design -top keyboard -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12252 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 307.855 ; gain = 100.875
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'keyboard' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:52]
+INFO: [Synth 8-3491] module 'sync_keyboard' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/sync_keyboard.vhd:10' bound to instance 'sync_keyboard_inst' of component 'sync_keyboard' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'sync_keyboard' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/sync_keyboard.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'sync_keyboard' (1#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/sync_keyboard.vhd:20]
+INFO: [Synth 8-3491] module 'falling_edge_detector' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/ALU_components.vhd:207' bound to instance 'falling_edge_detector_inst' of component 'falling_edge_detector' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'falling_edge_detector' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/ALU_components.vhd:217]
+INFO: [Synth 8-256] done synthesizing module 'falling_edge_detector' (2#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/ALU_components.vhd:217]
+INFO: [Synth 8-3491] module 'convert_scancode' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_scancode.vhd:16' bound to instance 'convert_scancode_inst' of component 'convert_scancode' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'convert_scancode' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_scancode.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'convert_scancode' (3#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_scancode.vhd:27]
+INFO: [Synth 8-3491] module 'keyboard_ctrl' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/keyboard_ctrl.vhd:17' bound to instance 'keyboard_ctrl_inst' of component 'keyboard_ctrl' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'keyboard_ctrl' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-256] done synthesizing module 'keyboard_ctrl' (4#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/keyboard_ctrl.vhd:28]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst1' of component 'convert_to_binary' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:169]
+INFO: [Synth 8-638] synthesizing module 'convert_to_binary' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'convert_to_binary' (5#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:24]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst2' of component 'convert_to_binary' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:175]
+INFO: [Synth 8-3491] module 'convert_to_binary' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/convert_to_binary.vhd:17' bound to instance 'convert_to_binary_inst3' of component 'convert_to_binary' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:181]
+INFO: [Synth 8-3491] module 'seven_seg_driver' declared at 'C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/7SegDriver.vhd:5' bound to instance 'seven_seg_inst' of component 'seven_seg_driver' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:187]
+INFO: [Synth 8-638] synthesizing module 'seven_seg_driver' [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/7SegDriver.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'seven_seg_driver' (6#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/imports/Lab4/7SegDriver.vhd:14]
+WARNING: [Synth 8-3848] Net BCD_num in module/entity keyboard does not have driver. [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (7#1) [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/sources_1/new/keyboard.vhd:52]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[11]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[10]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[9]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[8]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[7]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[6]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[5]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[4]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[3]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[2]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[1]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 345.070 ; gain = 138.090
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 345.070 ; gain = 138.090
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc]
+Finished Parsing XDC File [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fu6315ma-s/Lab4/Lab4.srcs/constrs_1/imports/Downloads/Nexys4Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/keyboard_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/keyboard_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 647.172 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "valid_scan_code" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "binary_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "anode_next" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   6 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	  16 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	  16 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sync_keyboard 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 4     
+Module falling_edge_detector 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module convert_scancode 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module keyboard_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   6 Input     24 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+Module convert_to_binary 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      4 Bit        Muxes := 2     
+Module seven_seg_driver 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "convert_to_binary_inst1/binary_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "convert_to_binary_inst2/binary_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "convert_to_binary_inst3/binary_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "seven_seg_inst/anode_next" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[11]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[10]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[9]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[8]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[7]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[6]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[5]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[4]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[3]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[2]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[1]
+WARNING: [Synth 8-3331] design keyboard has unconnected port BCD_num[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 647.172 ; gain = 440.191
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 647.172 ; gain = 440.191
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 647.172 ; gain = 440.191
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     4|
+|3     |LUT1   |    17|
+|4     |LUT2   |     5|
+|5     |LUT3   |    21|
+|6     |LUT4   |    14|
+|7     |LUT5   |    25|
+|8     |LUT6   |    32|
+|9     |FDCE   |    41|
+|10    |FDRE   |    21|
+|11    |FDSE   |     3|
+|12    |IBUF   |     4|
+|13    |OBUF   |    12|
+|14    |OBUFT  |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------------------------+----------------------+------+
+|      |Instance                     |Module                |Cells |
++------+-----------------------------+----------------------+------+
+|1     |top                          |                      |   212|
+|2     |  convert_scancode_inst      |convert_scancode      |    63|
+|3     |  falling_edge_detector_inst |falling_edge_detector |     2|
+|4     |  keyboard_ctrl_inst         |keyboard_ctrl         |    71|
+|5     |  seven_seg_inst             |seven_seg_driver      |    43|
+|6     |  sync_keyboard_inst         |sync_keyboard         |     4|
++------+-----------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 647.172 ; gain = 440.191
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 647.172 ; gain = 113.688
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 647.172 ; gain = 440.191
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+41 Infos, 25 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 647.172 ; gain = 420.887
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 647.172 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 19 09:46:05 2023...
